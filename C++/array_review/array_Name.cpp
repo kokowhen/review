@@ -19,7 +19,7 @@ void GetFirstArrayRAMAddress()
 {
     int arr[2] = {0, 3};
     cout << "arr[0]'s address is " << &arr[0] << endl;
-    cout << "arr[0]'s address is " << &arr[1] << endl;
+    cout << "arr[1]'s address is " << &arr[1] << endl;
 }
 
 int main()
