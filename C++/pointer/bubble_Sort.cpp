@@ -13,9 +13,9 @@ void bubbleSort(int *arr, int len)
     // 冒泡排序
     for (int i = 0; i < len - 1; i++) // 比较的轮数
     {
-        for (int j = 0; j < len - i; j++) // 每一轮比较的次数
+        for (int j = 0; j < len - i - 1; j++) // 每一轮比较的次数
         {
-            if (arr[j] < arr[j + 1])
+            if (arr[j] > arr[j + 1])
             {
                 tem = arr[j];
                 arr[j] = arr[j + 1];
@@ -27,7 +27,7 @@ void bubbleSort(int *arr, int len)
 
 // 打印排序好的数组
 
-void printResult(int *arr, int len)
+void printResult(int arr[], int len)
 {
     cout << "Result is :" << endl;
     for (int i = 0; i < len; i++)
