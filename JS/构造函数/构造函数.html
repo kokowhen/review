@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>构造函数</title>
+    <meta charset='UTF-8'>
+    <!-- <link href='style.css' rel='stylesheet' type='text/css'> -->
+    <script>
+        // 利用构造函数创建一个Person类
+        function Person(name, gender, age) {
+            this.name = name;
+            this.gender = gender;
+            this.age = age;
+            this.sayName = function () {
+                alert(name);
+            };
+        };
+
+        // 利用构造函数创建一个Dog类
+        function Dog(name, gender, age) {
+            this.name = name;
+            this.gender = gender;
+            this.age = age;
+            this.sayName = function () {
+                alert("汪汪");
+            };
+        };
+
+        // 创建三个Person类的实例
+        person1 = new Person("Jeffery", "male", 24);
+        person2 = new Person("Jacky", "male", 32);
+        person3 = new Person("Jay", "male", 40);
+
+        console.log(person1);
+        console.log(person2);
+        console.log(person3);
+
+        person1.sayName();
+        person2.sayName();
+        person3.sayName();
+
+        // 创建三个Dog类的实例
+        dog1 = new Dog("A", "male", 5);
+        dog2 = new Dog("B", "female", 4);
+        dog3 = new Dog("C", "male", 6);
+
+        console.log(dog1);
+        console.log(dog2);
+        console.log(dog3);
+
+        dog1.sayName();
+        dog2.sayName();
+        dog3.sayName();
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
